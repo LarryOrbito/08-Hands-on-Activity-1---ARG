@@ -1,23 +1,34 @@
-# Alarm Application
+# Alarm Clock Application
 
-This project is a simple Java application that allows users to set an alarm for a specific time on a Monday. The application checks if the alarm time is in the future or if it has already passed.
+## Overview
+The Alarm Clock Application is a simple Java program that allows users to set an alarm for a specific time on a Monday. The application checks whether the alarm time is in the future or has already passed, providing appropriate feedback to the user.
 
 ## Features
+- Set an alarm for a specific time.
+- Determine if the alarm time is in the future or has already passed.
+- User-friendly command-line interface for easy interaction.
 
-- Set an alarm for a specific time in the format `HH:MM`.
-- The application will inform you whether the alarm is set for later today or for tomorrow.
+## Components
+The application consists of the following key components:
 
-## Getting Started
+1. **Alarm Interface**: This interface defines the methods for setting and displaying the alarm.
 
-### Prerequisites
+2. **Weekday Abstract Class**: This class implements the `Alarm` interface and serves as a base for specific weekdays.
 
-- Java Development Kit (JDK) installed on your machine.
+3. **Monday Class**: This class extends the `Weekday` class and implements the `showAlarm` method to provide specific functionality for Monday.
 
 ## Usage
-When prompted, enter the time for the alarm in the format HH:MM.
-The application will display a message indicating whether the alarm is set for later today or for tomorrow.
+1. **Compile the Java files**: Use a Java compiler to compile the program.
+2. **Run the Monday class**: Execute the `Monday` class to start the application.
+3. **Set the alarm**: Enter the desired alarm time in the format `HH:MM` (24-hour format).
+4. **Receive feedback**: The program will inform you whether the alarm is set for a future time or if it is set for the next day.
 
-## Code Structure
-- **Alarm.java**: Interface defining the methods for setting and showing alarms.
-- **Weekday.java**: Abstract class implementing the Alarm interface and providing the setAlarm method.
-- **Monday.java**: Class extending Weekday, implementing the showAlarm method, and containing the main method to run the application.
+## Requirements
+- Java Development Kit (JDK) 8 or higher.
+- Basic understanding of Java and command-line operations.
+
+
+## Notes
+- Ensure that the input time is in the correct format (HH:MM) to avoid parsing errors.
+- The application currently only supports setting alarms for Monday. Future enhancements could include support for other weekdays.
+
