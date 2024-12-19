@@ -1,25 +1,23 @@
-# Game Application with Alarm Feature
+# Alarm Application
 
-Welcome to the **Game Application with Alarm Feature**! This Java-based application combines gaming and alarm functionalities, allowing users to immerse themselves in an adventure while managing their time effectively.
+This project is a simple Java application that allows users to set an alarm for a specific time on a Monday. The application checks if the alarm time is in the future or if it has already passed.
 
-## Key Features
+## Features
 
-- **Character Creation**: Users can create a personalized character by entering their name.
-- **Game Modes**: Choose between two exciting game modes:
-  - **Story Mode**: Experience a narrative-driven adventure.
-  - **Survival Mode**: Test your skills in a challenging environment.
-- **Engaging Gameplay**: Enjoy a structured gameplay experience that includes an introduction, gameplay, and an outro.
-- **Alarm Functionality**: Set an alarm to manage your time while playing.
+- Set an alarm for a specific time in the format `HH:MM`.
+- The application will inform you whether the alarm is set for later today or for tomorrow.
 
-## How to Use
-- **Character Creation**: When prompted, enter your name to create a character.
-Select Game Mode: Choose your preferred game mode by pressing 1 for Story mode or 2 for Survival mode.
-- **Gameplay**: Enjoy the adventure and remember to set your alarm if needed!
-## Future Enhancements
-Implement the showAlarm method to display the set alarm time.
-Introduce additional game modes and features for a richer experience.
-Enhance the user interface for improved interaction and engagement.
+## Getting Started
 
+### Prerequisites
 
+- Java Development Kit (JDK) installed on your machine.
 
+## Usage
+When prompted, enter the time for the alarm in the format HH:MM.
+The application will display a message indicating whether the alarm is set for later today or for tomorrow.
 
+## Code Structure
+- **Alarm.java**: Interface defining the methods for setting and showing alarms.
+- **Weekday.java**: Abstract class implementing the Alarm interface and providing the setAlarm method.
+- **Monday.java**: Class extending Weekday, implementing the showAlarm method, and containing the main method to run the application.
